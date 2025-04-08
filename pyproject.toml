@@ -6,7 +6,7 @@ authors = [
     {name = "Ivar Trygve Jarlsby"}
 ]
 readme = "README.md"
-requires-python = "^3.11"
+requires-python = ">=3.11,<4.0"
 dependencies = [
     "cognite-toolkit (==0.3.29)"
 ]
