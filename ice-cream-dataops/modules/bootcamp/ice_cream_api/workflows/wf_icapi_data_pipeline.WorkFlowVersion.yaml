@@ -7,6 +7,7 @@ workflowDefinition:
     parameters:
       transformation:
         externalId: create_asset_hierarchy
+        concurrencyPolicy: waitForCurrent
         data: {}
     retries: 3
     timeout: 3600
@@ -16,6 +17,7 @@ workflowDefinition:
     parameters:
       transformation:
         externalId: contextualize_ts_assets
+        concurrencyPolicy: waitForCurrent
         data: {}
     retries: 3
     timeout: 3600
@@ -27,6 +29,7 @@ workflowDefinition:
     parameters:
       function:
         externalId: icapi_datapoints_extractor
+        concurrencyPolicy: waitForCurrent
         data: { hours: 1}
     retries: 3
     timeout: 3600
@@ -38,6 +41,7 @@ workflowDefinition:
     parameters:
       function:
         externalId: oee_timeseries
+        concurrencyPolicy: waitForCurrent
         data: { loopback_minutes: 10080 }
     retries: 3
     timeout: 3600
