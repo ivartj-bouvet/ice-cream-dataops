@@ -7,6 +7,7 @@ workflowDefinition:
     parameters:
       transformation:
         externalId: create_asset_hierarchy
+        data: {}
     retries: 3
     timeout: 3600
     onFailure: abortWorkflow
@@ -15,6 +16,7 @@ workflowDefinition:
     parameters:
       transformation:
         externalId: contextualize_ts_assets
+        data: {}
     retries: 3
     timeout: 3600
     onFailure: abortWorkflow
